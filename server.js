@@ -21,6 +21,7 @@ app.use(express.json());
 // Routes
 app.use("/api/doctors", require("./routes/doctors.route"));
 app.use("/api/appointments", require("./routes/appointment.route"));
+app.use("/api/availability", require("./routes/availability.route"));
 
 // Error handling middleware
 app.use((err, req, res, next) => {
